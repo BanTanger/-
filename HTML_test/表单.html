@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="xxx.php" method="get">
+        <!-- value 默认值设置 -->
+        <!-- text 文本框 用户输入文本框 -->
+        <!-- 单选和复选可以设置checked属性，当页面打开的时候默认勾选 -->
+        <!-- 最大长度 maxlength 用正则居多 这个不常用-->
+        用户名: <input type="text" name="username" value="请输入用户名" maxlength="6"> <br>
+        <!-- password 遮盖密码，防止信息泄露 -->
+        密码: <input type="password" name="pwd"> <br>
+        <!-- radio 单选框 具有相同的name值才能实现单选-->
+        性别: 男 <input type="radio" name="性别"> 女 <input type="radio" name="性别" checked>
+        <br>
+        <!-- checkbox 多选框 -->
+        爱好:1 <input type="checkbox"> 2 <input type="checkbox"> 3 <input type="checkbox">
+
+        <br>
+
+        <!-- submit 提交按钮 通过value来更改内容 -->
+        <!-- 点击提交按钮 可以把表单域form 里面的表单元素 里面的值 提交给后台服务器 -->
+        <input type="submit"> <!-- 提交按钮 --> <br>
+        <!-- <input type="submit" value="免费注册"> <br> -->
+        <input type="reset" value="还原初始状态"> <br>
+        <!-- js脚本实现的button 普通按钮 -->
+        <input type="button" value="获取短信验证码"> <br>
+        <!-- 文件域 上传文件使用 -->
+        上传头像: <input type="file" name="file" >
+
+        <br>
+        <!-- label 标签里面的for 属性和相关元素的id属性相同 -->
+        <label for="name">用户名:</label> <!--信息放在label标签才可以实现点击信息进入输入框-->
+        <input type="text" id="name">
+        <label for="sex"></label>
+        <input type="radio" name="sex" id="sex">
+    </form>
+</body>
+</html>
