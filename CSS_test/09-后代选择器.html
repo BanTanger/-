@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+    <style>
+        /* 只要是ol的后代,儿子,孙子,都能选出来 */
+        /* 想要把ol里面的li筛选出来改成pink */
+        /* 元素1 元素2 { 样式声明 } */
+        ol li {
+            color: pink;
+        }
+        /* 可以是任意的基础选择器 */
+        /* 如果是标签里面有class类属性,那该标签就不用写 */
+        .red li {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>我是 ol 的孩子</li>
+        <li>我是 ol 的孩子</li>
+        <li>我是 ol 的孩子</li>
+        <li>我是 ol 的孩子</li>
+    </ol>
+    <ul>
+        <li>我是 ul 的孩子</li>
+        <li>我是 ul 的孩子</li>
+        <li>我是 ul 的孩子</li>
+        <li>我是 ul 的孩子</li>
+    </ul>
+    <!-- 两个一模一样,我想要把最后一个 ul 标签 改成红色 -->
+    <!-- 通过在ul 添加class的方式 -->
+    <ul class="red">
+        <li>我是 ul 的孩子</li>
+        <li>我是 ul 的孩子</li>
+        <li>我是 ul 的孩子</li>
+        <li>我是 ul 的孩子</li>
+    </ul>
+</body>
+</html>

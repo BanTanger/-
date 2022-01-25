@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 如果子元素没有设置行高，则会继承父元素的行高1.5 */
+        /* 此时子元素的行高是当前子元素的文字大小*1.5倍 */
+        body {
+            color: pink;
+            font: 14px/1.5 'Microsoft YaHei';
+        }
+        div {
+            font-size: 12px;
+        }
+        p {
+            font-size: 16px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>粉红色的回忆</div>
+    <p>分红</p>
+    <ul>
+        <!-- 如果没有指定文字大小，则会继承父亲的文字大小 body 12px 所有的li文字大小为12px -->
+        <li>没有指定文字大小</li>
+    </ul>
+</body>
+</html>

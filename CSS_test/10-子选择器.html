@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 子代选择器语法, 元素1>元素2,代表筛选出元素1标签里面的儿子 */
+        .nav>a {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 只想选出儿子,不想要孙子 -->
+    <div class="nav">
+        <a href="#">我是儿子</a>
+        <p>
+            <a href="#">我是孙子</a>
+        </p>
+    </div>
+</body>
+</html>

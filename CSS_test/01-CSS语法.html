@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>体会CSS语法规范</title>
+    <style>
+        h1 {
+            color: red;
+            /* px 像素值 */
+            /* font-size: 12px; */
+        }
+        /* 标签选择器 只能选择某一类标签 每一个标签的内容都会被选择，不能自行更改*/
+        div {
+            color: pink;
+        }
+        p {
+            color: green;
+        }
+    </style>
+    <style>
+        /* 类选择器 */
+        /* 口诀:样式点定义，结构类class调用 */
+        .red {
+            color: red;
+            font-size: 25px;
+        }
+        .green {
+            color: blue;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>我叫半糖先生BanTanger</h1>
+    <p>男生</p>
+    <p>男生</p>
+    <p>男生</p>
+
+    <div>女生</div>
+    <div>女生</div>
+    <div>女生</div>
+    <br>
+    <div class="red">王兰</div>
+    <div class="green">来生</div>
+
+</body>
+</html>

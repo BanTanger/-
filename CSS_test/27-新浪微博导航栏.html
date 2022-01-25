@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+            height: 41px;
+            border-top: 1px solid #ff8500;
+            border-bottom: 1px solid #edeef0;
+            background-color: #fcfcfc;
+            line-height: 41px;
+            text-align: center;
+        }
+        a {
+            /* 设置成行内块元素才可以设置高度实现对齐功能 */
+            display: inline-block;
+            font-size: 12px;
+            color: black;
+            text-decoration: none;
+            height: 41px;
+            padding: 0 20px;
+        }
+        /* 伪类选择器hover增加体验感 */
+        a:hover {
+            background-color: #eee;
+            color: #ff8500;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#">设为首页</a>
+        <a href="#">手机新浪网</a>
+        <a href="#">移动客户端</a>
+        <a href="#">您好，用户</a>
+        <a href="#">微博</a>
+        <a href="#">博客</a>
+        <a href="#">邮箱</a>
+        <a href="#">网页导航</a>
+    </div>
+</body>
+</html>

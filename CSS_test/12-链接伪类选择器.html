@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1.未访问的链接 a:link 把没有点击过的(访问过的)链接筛选出来 */
+        a:link {
+            color: black;
+            /* tdn 取消下划线 */
+            text-decoration: none;
+        }
+
+        /* 2.已访问的链接 a:visited  */
+        a:visited {
+            color: purple;
+        }
+
+        /* 3.鼠标经过时候出现的链接 a:hover */
+        a:hover {
+            color: skyblue;
+        }
+        
+        /* 4.鼠标按下不松开的时候的链接颜色 a:active */
+        a:active {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">小猪佩奇</a>
+</body>
+
+</html>
