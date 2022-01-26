@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            /* 修改整个页面的颜色 -- 灰色 */
+            background-color: #f5f5f5;
+        }
+        .box {
+            width: 298px;
+            height: 500px;
+            background-color: white;
+            /* 内容居中对齐 */
+            /* text-align: center; */
+            /* 盒子居中对齐 */
+            margin: 0 auto;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            color: skyblue;
+        }
+        /* 图片大小调整 */
+        .box img {
+            width: 100%;
+        }
+        .peview {
+            height: 70px;
+            font-size: 14px;
+            /* 因为这个段落没有width属性，用padding不会撑开盒子的宽度 */
+            /* padding: 0 28px; */
+            margin: 30px;
+        }
+        .appraise {
+            font-size: 12px;
+            color: gray;
+            margin-top: 20px;
+            padding: 0 28px;
+        }
+        .info {
+            color:orange;
+        }
+        .info h4{
+            display: inline-block;
+            /* 把不粗体 */
+            font-weight: 400;
+            padding: 0 28px;
+        }
+        .info em{
+            color: gray;
+            /* 修改em标签不倾斜 */
+            font-style: normal;
+            margin: 0 6px 0 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/91bd66c0e6bf7a22d12a8b191da19078.jpg?thumb=1&w=209&h=209&f=webp&q=90" alt="图片">
+        <p class="peview">牛逼牛逼牛逼牛逼牛逼牛逼牛逼牛逼</p>
+        <div class="appraise">来自114514人的评价</div>
+        <div class="info">
+            <h4><a href="#">米家超薄电磁炉</a></h4>
+            <em>|</em>
+            <span>499元</span>
+        </div>
+    </div>
+</body>
+</html>
