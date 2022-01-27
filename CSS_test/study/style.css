@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+body {
+    background-color: #ccc;
+}
+.w {
+    width: 1200px;
+    margin: auto;
+}
+.header {
+    height: 42px;
+    background-color: white;
+    /* margin 此时一定会将上面的margin auto 层叠掉 */
+    margin: 30px auto;
+}
+.logo {
+    float: left;
+    width: 198px;
+    height: 42px;
+    background-color: white;
+}
+.nav ul li a {
+    /* 将a行内元素设置成盒子，增大点击面积 */
+    display: block;
+    height: 42px;
+    /* 左右padding值撑开盒子，因为后期可能要添加更多li标签 */
+    padding: 0 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #050505;
+    line-height: 42px;
+}
+.nav ul li {
+    /* 将块级元素li浮动起来 */
+    float: left;
+    /* 加宽盒子 */
+    margin: 0 15px;
+}
+.nav {
+    float: left;
+    margin-left: 60px;
+}
+.nav ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+    color: #00a4ff;
+}
+.search {
+    float: left;
+    width: 412px;
+    height: 42px;
+    background-color: #00a4ff;
+    margin-left: 50px;
+}
+.search input {
+    /* 345 + 15 = 360 padding 会撑大，直接减去 */
+    float: left;
+    width: 345px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    border-right: 0;
+    color: #bfbfbf;
+    font-size: 14px;
+    padding-left: 15px;
+}
+.search button {
+    /* button盒子掉下来的原因， 行内块之间会存在缝隙 -> 给盒子加浮动 */
+    float: left;
+    width: 50px;
+    height: 40px;
+    /* button 默认边框清除 */
+    border: 0;
+    /* 按钮添加图片 */
+    background: url(images/fa-search.png);
+}
+.user {
+    float: left;
+    line-height: 42px;
+    padding-left: 15px;
+    font-size: 14px;
+    color: #666;
+}
+.user img {
+        /* 图片居中对齐文字 */
+        vertical-align: middle;
+}
