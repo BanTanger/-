@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one {
+            width: 800px;
+            height: 1400px;
+            margin: 0 auto;
+            background-color: pink;
+        }
+        .two {
+            position: fixed;
+            /* 先left百分之五十移动到版心中央 */
+            left: 50%;
+            /* 再移动版心位置的一半到版心右侧 可以加一点像素更加好看合理 */
+            margin-left: 405px;
+            width: 50px;
+            height: 150px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 这里一个关键点，修饰版心的侧边栏一定要先写，不然div块级元素的特性会将侧边栏放到下面 -->
+    <div class="two">123</div>
+    <div class="one">、</div>
+</body>
+</html>

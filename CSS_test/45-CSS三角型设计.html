@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 0;
+            height: 0;
+            border-top: 10px solid pink;
+            border-bottom: 10px solid red;
+            border-left: 10px solid green;
+            border-right: 10px solid blue;
+        }
+
+        /* 只要将left设置成white，其他全是透明，即可实现三角形的效果 */
+        .box2 {
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid blue;
+            border-right: 10px solid transparent;
+        }
+        .jd{
+            position: relative;
+            width: 120px;
+            height: 249px;
+            background-color: pink;
+        }
+        .jd span {
+            position: absolute;
+            top: -10px;
+            right: 15px;
+            width: 0;
+            height: 0;
+            line-height: 0;
+            font-size: 0;
+            border: 5px solid transparent;
+            border-bottom-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="jd">
+        <span></span>
+    </div>
+</body>
+
+</html>

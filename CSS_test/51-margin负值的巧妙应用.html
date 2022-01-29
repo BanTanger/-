@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li {
+            position: relative;
+            float: left;
+            list-style: none;
+            width: 150px;
+            height: 200px;
+            border: 1px solid red;
+            /* 通过margin -1的设置，将边框右边的线被后一边框的左边覆盖，就会显得线没有加粗 */
+            margin-left: -1px;
+        }
+        ul li:hover {
+            /* 1.如果盒子没有定位，鼠标经过hover添加相对定位
+            相对定位既不脱标，默认的z轴有高于标准流，所以能把被覆盖的边框显示到上面
+            position: relative;*/
+
+            /* 2.如果 li 都有定位，直接在hover里调高z-index的级别即可 */
+            z-index: 1;
+            border: 1px solid blue; 
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 65px;
+            margin: 100px auto;
+            background-color: pink;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* 弹性伸缩盒子模型显示 */
+            display: -webkit-box;
+            /* 限制在一个块元素显示的文本行数 */
+            -webkit-line-clamp: 3;
+            /* 设置或检索伸缩盒对象的子元素排列方式 */
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
+<body>
+    <div>以下省略一万字以下省略一万字以下省略一万字以下省略一万字</div>
+</body>
+</html>
