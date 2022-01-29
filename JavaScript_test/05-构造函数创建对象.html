@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 语法格式:
+        // function 构造函数名 (){
+        //     this.属性 = 值;
+        //     this.方法 = function() {}
+        // }
+        // new 构造函数名();
+        function Star(uname,age,sex) {
+            this.uname = uname;
+            this.age = age;
+            this.sex = sex;
+            this.sing = function(sang) {
+                console.log(sang)
+            }
+        }
+        var ldh = new Star('刘德华',18,'男');
+        // 查看是否为对象
+        // console.log(typeof ldh);
+        console.log(ldh.uname);
+        console.log(ldh['age']);
+        console.log(ldh['sex']);
+        ldh.sing('冰雨');
+        var zxy = new Star('张学友',19,'女');
+        console.log(zxy.uname);
+        console.log(zxy['age']);
+        console.log(zxy['sex']);
+        zxy.sing('李兰香')
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

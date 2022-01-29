@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var obj = new Object();
+        obj.uname = '张三';
+        obj.age = 18;
+        obj.sex = '男';
+        obj.sayHi = function() {
+            console.log('hi~');
+        }
+        // 利用 变量名 = 赋值的方法来添加新的属性 
+        // 每个属性和方法之间 使用分号隔开
+        console.log(obj.uname);
+        console.log(obj['sex']);
+        obj.sayHi();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
