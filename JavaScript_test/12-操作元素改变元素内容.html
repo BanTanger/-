@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>显示当前时间</button>
+    <div>某个时间</div>
+    <p>显示时间</p>
+    <script>
+        // 目的：点击按钮 div 文字发生变化
+        // 1.获得元素
+        var btn = document.querySelector('button');
+        var div = document.querySelector('div');
+        // 2.注册事件
+        btn.onclick = function () {
+            // div的内容要被改变，所以写的是div
+            div.innerText = getTimer()
+        }
+
+        function getTimer() {
+            var time = new Date();
+            var h = time.getHours();
+            var m = time.getMinutes();
+            var s = time.getSeconds();
+            // 逻辑判断
+            h = h < 10 ? '0' + h : h;
+            m = m < 10 ? '0' + m : m;
+            s = s < 10 ? '0' + s : s;
+            return h + ':' + m + ':' + s;
+        }
+        // 元素不添加注册事件
+        var p = document.querySelector('p');
+        p.innerText = getTimer();
+    </script>
+</body>
+
+</html>
