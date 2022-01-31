@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            background-color: pink;
+        }
+        .change {
+            width: 200px;
+            height: 200px;
+            margin: 0 0;
+            background-color: purple;
+            font-size: 18px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>文本</div>
+    <script>
+        var box = document.querySelector('div');
+        box.onclick = function() {
+            this.className = 'change';
+        }
+    </script>
+</body>
+</html>

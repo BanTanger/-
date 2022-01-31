@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        div {
+            position: relative;
+            width: 160px;
+            height: 160px;
+            margin: 100px auto;
+        }
+
+        .close-btn {
+            position: absolute;
+            left: -17px;
+            top: 0;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #ccc;
+            line-height: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="images/淘宝.png" alt="">
+        <i class="close-btn">x</i>
+    </div>
+    <script>
+        // 查找元素
+        var pic = document.querySelector('.box');
+        var btn = document.querySelector('.close-btn');
+        // 注册事件 程序处理
+        btn.onclick = function() {
+            pic.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
